@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>layout1</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+  .active {
+    background-color: #04AA6D;
+  }
+  #change{
+    color:aliceblue;
+  }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="#" id = "change">&emsp14;&emsp14;&emsp13;<img src="https://swecha.org/sites/default/files/2021-05/Swecha.png" height = 40 width = 70 style = "border-radius: 10%;"" height = 30 width = 60 style = "border-radius: 5%;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        &emsp;&emsp;
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('homea')}}" id = "change">Home</a>
+        </li>&emsp;&emsp;
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('successa')}}" id = "change">Data</a>
+        </li>&emsp;&emsp;
+        <li class="nav-item" >
+          <a class="nav-link" href="{{url_for('registrationformt')}}" id = "change">Registrations</a>
+        </li>
+        &emsp;&emsp;
+        <a class="nav-link" href="{{url_for('idadmin')}}" id = "change">Generate ID</a>
+      </li>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <li class="nav-item" >
+          <a class="nav-link" href="{{url_for('logout')}}" id = "change">Logout</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+  <title>register</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <style>
+            #want{
+                color:black
+            }
+        </style>
+    </head>
+    <body style = "background-image:radial-gradient(circle at left,#ffef3c, #4ffbbc)">
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col" style = "background-color:#fcee53;border-radius: 5%;border-width:20px; -webkit-filter: drop-shadow(10px 10px 5px #2efcb0);
+                filter: box-shadow(10px 10px 5px #2efcb0);">
+                    <br><center><h1 style = "color:#000000">Registration Form</h1></center><br><br>
+                    <form method='POST' action = "{{url_for('registrationform')}}">
+                        <label for="username" style = "color:#000000">Username: &emsp;&emsp14;</label>
+                        <input style = "background-color:#bdceee; border-style:double;" type="text" placeholder = "Username" id="want" name="username"><br><br>
+                        <label for="password" style = "color:#000000">Password:&emsp;&emsp;</label>
+                        <input style = "background-color:#bdceee; border-style:double;" type="password" placeholder = "Password" id="want" name="password"><br><br>
+                        <label for="studentname" style = "color:#000000">Student name: </label>
+                        <input style = "background-color:#bdceee; border-style:double;" type="text" placeholder = "Studentname" id="want" name="studentname"><br><br>
+                        <label for="rollnumber" style = "color:#000000">roll number: &emsp14;&emsp14;&emsp13;</label>
+                        <input style = "background-color:#bdceee; border-style:double;" type="text" placeholder = "Roll number" id="want" name="rollnumber"><br><br>
+                        <label for="year" style = "color:#000000">year:&emsp;&emsp;&emsp;&emsp;&emsp14;</label>
+                        <input style = "background-color:#bdceee; border-style:double;" type="text" placeholder = "Year" id="want" name="year"><br><br>
+                        <label for="branch" style = "color:#000000">branch:&emsp;&emsp;&emsp;</label>
+                        <input style = "background-color:#bdceee; border-style:double;" type="text" placeholder = "Branch" id="want" name="branch"><br><br> 
+                        <label for="phonenumber" style = "color:#000000">phone:&emsp;&emsp;&emsp14;&emsp;</label>
+                        <input style = "background-color:#bdceee; border-style:double;" type="text" placeholder = "Phone number" id="want" name="phonenumber"><br><br><br><br>
+                        <center>
+                            <input type="reset" name="reset" value = "Reset" style = "background-color: #0091D5;color:white;font-weight: bold;border-radius: 20%;">&emsp;&emsp;
+                            <input type = "submit" id = "submit_button" name = "submit_button" value = "Register" style = "background-color: #0091D5;color:white;font-weight: bold;border-radius: 20%;">
+                        </center>
+                    </form>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </body>
+</html>

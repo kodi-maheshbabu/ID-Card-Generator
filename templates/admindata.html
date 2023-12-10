@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>admin</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+  .active {
+    background-color: #04AA6D;
+  }
+  #change{
+    color:aliceblue;
+  }
+  </style>
+</head>
+<body >
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="#" id = "change"><img src="https://swecha.org/sites/default/files/2021-05/Swecha.png" height = 40 width = 70 style = "border-radius: 5%;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        &emsp;&emsp;
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('homea')}}" id = "change">Home</a>
+        </li>&emsp;&emsp;
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('successa')}}" id = "change">Data</a>
+        </li>&emsp;&emsp;
+        <li class="nav-item" >
+          <a class="nav-link" href="{{url_for('registrationformt')}}" id = "change">Registrations</a>
+        </li>&emsp;&emsp;
+        <a class="nav-link" href="{{url_for('idadmin')}}" id = "change">Generate ID</a>
+      </li>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <li class="nav-item" >
+          <a class="nav-link" href="{{url_for('logout')}}" id = "change">Logout</a>
+
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <body style = "background-image: radial-gradient(#ffef3c, #4ffbbc);">
+    <br><br><br>
+    <center><h1 style = "color:#000000"><b>&emsp14;STUDENTS DATA</b>&emsp14;</h1></center><br><br>
+    <div class = "container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-10">
+                <table class = "table table-stripped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>USER NAME</th>
+                            <th>STUDENT NAME</th>
+                            <th>ROLL NUMBER</th>
+                            <th>YEAR</th>
+                            <th>BRANCH</th>
+                            <th>PHONE NUMBER</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody-light">
+                        {%for user in items%}
+                            <tr>
+                                {%for value in user%}
+                                    <td id = "want"> {{value}}</td>
+                                {%endfor%}
+                            </tr>
+                        {%endfor%}
+                    </tbody>
+                </table>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</body>

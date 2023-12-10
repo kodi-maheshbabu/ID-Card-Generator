@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"><br><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col2"></div>
+        <div class="col2" style = "background-image:linear-gradient(#7ad4fa, #c790fc); border-radius: 5%;"><center>
+        <br><p style="text-align:center;
+        -webkit-filter: drop-shadow(5px 5px 5px #666666);
+        filter: drop-shadow(5px 5px 5px #666666);">
+            <img src = "https://upload.wikimedia.org/wikipedia/commons/5/5b/Swechalogo.png?20200714151506" width = "20%" height = "20%"></center>
+        </center>
+            <form method='POST' action = "{{url_for('idh')}}">
+            <br>
+            <p style = "font-family: 'Times New Roman', Times, serif;font-size:large ;"><b>&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;STUDENT NAME:</b>  {{items[0][0]}}</p><br>
+            <p style = "font-family: 'Times New Roman', Times, serif;font-size:large ;"><b>&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;ROLL NUMBER:</b>   {{items[0][1]}} </p><br>
+            <p style = "font-family: 'Times New Roman', Times, serif;font-size:large ;"><b>&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;YEAR:</b>  {{items[0][2]}}</p><br>
+            <p style = "font-family: 'Times New Roman', Times, serif;font-size:large ;"><b>&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;BRANCH:</b>  {{items[0][3]}}</p><br>
+            <p style = "font-family: 'Times New Roman', Times, serif;font-size:large ;"><b>&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;PHONE NUMBER:</b>  {{items[0][4]}}</p><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/XXXTentacion_signature.svg/1206px-XXXTentacion_signature.svg.png" height = "10%" width = "10%">
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>PRINCIPAL</b></p><br><br>
+            </form>
+            </div>
+            <div class = "col2"></div>
+            <div class = "row"></div>
+            </div></div><br><br>
+            <center>
+                <input value = "DOWNLOAD" type = "button" onclick = "handlePrint()"/></center><br><br>
+                <script ype = "text/javascript">
+                    const handlePrint = () => {
+                        var actContents = document.body.innerHTML;
+                        document.body.innerHTML = actContents;
+                        window.print();
+                    }
+                </script>

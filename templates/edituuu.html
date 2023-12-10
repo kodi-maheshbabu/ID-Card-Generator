@@ -1,0 +1,66 @@
+<html>
+<head>
+  <title>EDIT PAGE</title>
+</head>
+<title>layout1</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+#change{
+  color:aliceblue;
+}
+</style>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand" href="#" id = "change"><img src="https://swecha.org/sites/default/files/2021-05/Swecha.png" height = 40 width = 70 style = "border-radius: 10%;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">&emsp;&emsp;
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('successu')}}" id = "change">Data</a>
+      </li>&emsp;&emsp;
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('editu')}}" id = "change">Edit details</a>
+      </li>&emsp;&emsp;
+     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      <li class="nav-item" >
+        <a class="nav-link" href="{{url_for('logout')}}" id = "change">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<body style = "background-color: #92a8d1;">
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col" style = "background-color:#034f84;border-radius: 5%;">
+                <br><center><h1 style = "color:#ffffff">EDIT DETAILS</h1></center><br><br>
+                <form method='POST' action = "{{url_for('edituu')}}">
+                    <label for="username" style = "color:#ffffff">Username:&emsp;&emsp14;&emsp13;</label>
+                    <input style = "background-color:#92a8d1; border-style:double;" type="text" placeholder = "Username" id="want" name="username"><br><br>
+                    <label for="password" style = "color:#ffffff">Password:&emsp;&emsp;</label>
+                    <input style = "background-color:#92a8d1; border-style:double;" type="password" placeholder = "Password" id="want" name="password"><br><br>
+                    <label for="studentname" style = "color:#ffffff">Student name: </label>
+                    <input style = "background-color:#92a8d1; border-style:double;" type="text" placeholder = "Studentname" id="want" name="studentname"><br><br>
+                    <label for="rollnumber" style = "color:#f4f4f4">Roll number: &emsp14;&emsp14;</label>
+                    <input style = "background-color:#92a8d1; border-style:double;" type="text" placeholder = "Roll number" id="want" name="rollnumber"><br><br>
+                    <label for="year" style = "color:#ffffff">Year:&emsp;&emsp;&emsp;&emsp;&emsp14;</label>
+                    <input style = "background-color:#92a8d1; border-style:double;" type="text" placeholder = "Year" id="want" name="year"><br><br>
+                    <label for="branch" style = "color:#ffffff">Branch:&emsp;&emsp;&emsp;</label>
+                    <input style = "background-color:#92a8d1; border-style:double;" type="text" placeholder = "Branch" id="want" name="branch"><br><br> 
+                    <label for="phonenumber" style = "color:#ffffff">Phone:&emsp;&emsp;&emsp14;&emsp;</label>
+                    <input style = "background-color:#92a8d1; border-style:double;" type="text" placeholder = "Phone number" id="want" name="phonenumber"><br><br><br><br>
+                    <center>&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;
+                        <input type="reset" name="reset" value = "Reset" style = "background-color: #0091D5;color:white;font-weight: bold;border-radius: 20%;">&emsp;&emsp;
+                        <input type = "submit" id = "submit_button" name = "submit_button" value = "Edit" style = "background-color: #0091D5;color:white;font-weight: bold;border-radius: 20%;">
+                    </center>
+                </form>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</body>
+</html>

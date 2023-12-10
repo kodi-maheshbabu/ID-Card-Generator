@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>layout1</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+  .active {
+    background-color: #04AA6D;
+  }
+  #change{
+    color:aliceblue;
+  }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="#" id = "change"><img src="https://swecha.org/sites/default/files/2021-05/Swecha.png" height = 40 width = 70 style = "border-radius: 5%;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        &emsp;&emsp;
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('homea')}}" id = "change">Home</a>
+        </li>&emsp;&emsp;
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('successa')}}" id = "change">Data</a>
+        </li>&emsp;&emsp;
+        <li class="nav-item" >
+          <a class="nav-link" href="{{url_for('registrationformt')}}" id = "change">Registrations</a></li>&emsp;&emsp;
+          <li class="nav-item" >
+            <a class="nav-link" href="{{url_for('idadmin')}}" id = "change">Generate ID</a>
+        </li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <li class="nav-item" >
+          <a class="nav-link" href="{{url_for('logout')}}" id = "change">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <body style = "background-image: radial-gradient(#ffef3c, #4ffbbc);"><br>
+ <p style="text-align:center;
+    -webkit-filter: drop-shadow(5px 5px 5px #666666);
+    filter: drop-shadow(5px 5px 5px #666666);"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Swechalogo.png?20200714151506" alt="Logo" width="20%" height="150"></p><br><br>
+    <p style="text-align:left;font-family: 'Times New Roman', Times, serif;font-size: x-large;color: #000000;">&emsp;&emsp;Swecha aims at providing global software solutions to the local people with the Free Software development model by working together with the community of developers and users all over. 
+      The prime objective of Swecha OS is to provide a complete computing solution to a population that speaks and understands only Telugu.The project aims at bridging the gap between the computer technology that exists predominantly in English and the Telugu-speaking community of India. The project also aims at providing a framework for development and maintenance of Free Software projects taken up by the community.</p>
+  </body>
+  </html>

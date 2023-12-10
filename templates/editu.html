@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>Edit page</title>
+</head>
+<title>layout1</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+#change{
+  color:aliceblue;
+}
+</style>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand" href="#" id = "change"><img src="https://swecha.org/sites/default/files/2021-05/Swecha.png" height = 40 width = 70 style = "border-radius: 10%;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">&emsp;&emsp;
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('successu')}}" id = "change">Data</a>
+      </li>&emsp;&emsp;
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('editu')}}" id = "change">Edit details</a>
+      </li>&emsp;&emsp;
+     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      <li class="nav-item" >
+        <a class="nav-link" href="{{url_for('logout')}}" id = "change">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<body style = "background-color: #92a8d1;">
+        <br><br><div class="container">
+          <div class="row">
+              <div class="col"></div>
+              <div class="col" style = "background-color:#034f84;border-radius: 5%;">
+                  <br><h1 style = "color:white">&emsp;&emsp;&emsp;Login</h1><br><br>
+                  <form method='POST' action = "{{url_for('edituuu')}}">
+                      <label for="username" style = "color: #f7cac9;">Username:&emsp14;</label>
+                      <input type="text" placeholder = "Username" id="username" name="username"><br><br>
+                      <label for="password" style = "color:#f7cac9">Password:&emsp14;&emsp14;</label>
+                      <input type="password" placeholder = "Password" id="password" name="password"><br><br>
+                      <center>
+                      <input type = "reset" style = "background-color: #0091D5;color:white;font-weight: bold;border-radius: 20%;">&emsp;
+                      <input type="submit" name = "submit_button" value = "Submit" style = "background-color: #0091D5;color:WHITE;font-weight: bold;border-radius: 20%;">
+                      </center>
+                      <br><br><br>
+                  </form>
+              </div>
+              <div class="col"></div>
+          </div>
+      </div>
+    </body>
+</html>
+

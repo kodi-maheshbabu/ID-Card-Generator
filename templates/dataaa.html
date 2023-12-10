@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>admin</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+  .active {
+    background-color: #04AA6D;
+  }
+  #change{
+    color:aliceblue;
+  }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="#" id = "change"><img src="https://swecha.org/sites/default/files/2021-05/Swecha.png" height = 40 width = 70 style = "border-radius: 5%;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        &emsp;&emsp;
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('homea')}}" id = "change">Home</a>
+        </li>&emsp;&emsp;
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('successa')}}" id = "change">Data</a>
+        </li>&emsp;&emsp;
+        <li class="nav-item" >
+          <a class="nav-link" href="{{url_for('registrationformt')}}" id = "change">Registrations</a>
+        </li>&emsp;&emsp;
+        <a class="nav-link" href="{{url_for('idadmin')}}" id = "change">Generate ID</a>
+      </li>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <li class="nav-item" >
+          <a class="nav-link" href="{{url_for('logout')}}" id = "change">Logout</a>
+
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <body style="background-image:radial-gradient(circle at left,#ffef3c, #4ffbbc)">
+    <br><br><br>
+     <p style = "font-family: 'Times New Roman', Times, serif;font-size: x-large;">&emsp;&emsp;<b>STUDENT NAME:</b>  {{items[0]}}</p>
+     <p style = "font-family: 'Times New Roman', Times, serif;font-size: x-large;">&emsp;&emsp;<b>ROLL NUMBER:</b>  {{items[1]}}&emsp13;</p>
+     <p style = "font-family: 'Times New Roman', Times, serif;font-size: x-large;">&emsp;&emsp;<b>YEAR:</b>  {{items[2]}}&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+     <p style = "font-family: 'Times New Roman', Times, serif;font-size: x-large;">&emsp;&emsp;<b>BRANCH:</b>  {{items[3]}}&emsp;&emsp;&emsp;</p>
+     <p style = "font-family: 'Times New Roman', Times, serif;font-size: x-large;">&emsp;&emsp;<b>PHONE NUMBER:</b>  {{items[4]}}</p>
+     <br><br>
+     <p style = "font-size: x-large; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-weight: bold;color:blue;">&emsp;&emsp;<b>SELECT TYPE OF CARD YOU WANT</b></p>
+     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+     <form method='POST' action = "{{url_for('idv')}}">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+     <input type = "submit" value = "VERTICAL" style = "background-color: #0091D5;color:white;font-weight: bold;border-radius: 20%;">&emsp;
+    <form method='POST' action = "{{url_for('idh')}}">&emsp;
+     <input type="submit" name = "submit_button" value = "HORIZONTAL" style = "background-color: #0091D5;color:WHITE;font-weight: bold;border-radius: 20%;">
+    </form></center>
+    </body>
